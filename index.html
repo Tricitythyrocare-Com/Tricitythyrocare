@@ -1,175 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b2147">
-  <meta name="description" content="Tricity Thyrocare Collection Centre - Health packages, home sample collection and Pan India service.">
-  <title>Tricity Thyrocare Collection Centre</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b2b5c">
+  <title>Tricity Thyrocare Collection Centre | Health Packages & Home Collection</title>
+  <meta name="description" content="Tricity Thyrocare Collection Centre - diagnostic health packages, home sample collection and easy online booking.">
+  <link rel="icon" href="logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="topbar">
-    <div>🏠 Home Collection Available</div>
-    <div>🚚 Pan India Service Available</div>
-    <a href="tel:8178009011">📞 8178009011</a>
-  </div>
+  <div class="topbar">🏠 Home Collection Available <span>•</span> 📞 <a href="tel:8178009011">8178009011</a></div>
 
   <header class="header">
     <a class="brand" href="#home" aria-label="Tricity Thyrocare home">
-      <div class="brand-mark">T<span>+</span></div>
-      <div>
-        <div class="brand-name"><b>Thyro</b><em>care</em></div>
-        <small>Tests you can trust</small>
-      </div>
+      <img src="logo.svg" alt="Thyrocare logo">
+      <div><strong>Tricity <b>Thyrocare</b></strong><small>Collection Centre</small></div>
     </a>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#packages">Packages</a>
-      <a href="#services">Services</a>
-      <a href="#why-us">Why Us</a>
-      <a class="nav-book" href="tel:8178009011">Book Test</a>
+    <nav id="nav">
+      <a href="#home">Home</a><a href="#packages">Packages</a><a href="#booking">Book Test</a><a href="#why">Why Us</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <button class="menu" aria-label="Open menu">☰</button>
+    <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+    <button class="cartBtn" id="cartOpen">🛒 <span id="cartCount">0</span></button>
   </header>
 
   <main id="home">
     <section class="hero">
-      <div class="hero-copy">
+      <div class="heroText">
         <span class="eyebrow">TRICITY THYROCARE COLLECTION CENTRE</span>
-        <h1>Better health starts with a <span>simple checkup.</span></h1>
-        <p>Trusted diagnostic packages with convenient home sample collection. Choose a package and book your test today.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#packages">Explore Packages <span>→</span></a>
-          <a class="btn light" href="tel:8178009011">Call 8178009011</a>
+        <h1>Better health starts with a <em>simple checkup.</em></h1>
+        <p>Trusted diagnostic packages with convenient home sample collection. Choose your package and book your test in a few simple steps.</p>
+        <div class="heroActions">
+          <a class="primary" href="#packages">Explore Packages <span>→</span></a>
+          <a class="secondary" href="tel:8178009011">Call 8178009011</a>
         </div>
-        <div class="trust-row">
-          <div><strong>✓</strong><span>Reliable Reports</span></div>
-          <div><strong>⌂</strong><span>Home Collection</span></div>
-          <div><strong>★</strong><span>Pan India Service</span></div>
+        <div class="trustRow">
+          <span>✓ Reliable Reports</span><span>⌂ Home Collection</span><span>★ Pan India Service</span>
         </div>
       </div>
-      <div class="hero-visual">
+      <div class="heroVisual">
         <div class="glow"></div>
-        <div class="hero-card back-card">
-          <span>Health first</span>
-          <b>Complete<br>wellness care</b>
-        </div>
-        <div class="hero-card main-card">
+        <div class="healthCard">
           <span class="pill">SPECIAL PACKAGES</span>
-          <h2>Check. Know.<br><span>Take care.</span></h2>
-          <div class="mini-stats">
-            <div><b>100+</b><small>Tests & panels</small></div>
-            <div><b>24/7</b><small>Booking support</small></div>
-          </div>
+          <h2>Check.<br><em>Know.</em><br>Care.</h2>
+          <p>Simple booking • Home collection • Trusted diagnostics</p>
+          <div class="miniStats"><span>24×7<br><b>Booking</b></span><span>Easy<br><b>WhatsApp</b></span><span>Home<br><b>Collection</b></span></div>
         </div>
-        <div class="float-badge">❤️ <b>Your Health</b><br>Our Priority</div>
+        <div class="floating">🧪 <b>Health first</b><small>Preventive care made easy</small></div>
       </div>
     </section>
 
-    <section class="quick-strip">
-      <div><span>✓</span><b>Trusted Diagnostics</b><small>Quality-focused testing</small></div>
-      <div><span>⌂</span><b>Free Home Collection</b><small>Convenient sample pickup</small></div>
-      <div><span>🚚</span><b>Pan India Service</b><small>Wherever you are</small></div>
-      <div><span>☎</span><b>Easy Booking</b><small>8178009011</small></div>
+    <section class="quick">
+      <div><b>📍 Home Sample Collection</b><small>Convenient doorstep service</small></div>
+      <div><b>⚡ Easy Booking</b><small>Book in minutes</small></div>
+      <div><b>💬 WhatsApp Support</b><small>8178009011</small></div>
+      <div><b>🇮🇳 Pan India Service</b><small>Service availability varies</small></div>
     </section>
 
-    <section id="packages" class="packages section">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">OUR POPULAR PACKAGES</span>
-          <h2>Choose the right <span>health package</span></h2>
-          <p>Handpicked packages for preventive care, hormones, fever and full-body wellness.</p>
-        </div>
-        <div class="slider-buttons">
-          <button id="prev" aria-label="Previous">←</button>
-          <button id="next" aria-label="Next">→</button>
-        </div>
+    <section class="packages" id="packages">
+      <div class="sectionHead">
+        <div><span class="eyebrow">HEALTH PACKAGES</span><h2>Find the right package for you</h2><p>Handpicked packages for preventive care, hormones, fever and full-body wellness.</p></div>
+        <button class="outline" id="cartOpen2">View Cart <span id="cartCount2">0</span></button>
       </div>
-
-      <div class="package-wrap">
-        <div class="package-track" id="packageTrack">
-          <article class="package-card">
-            <div class="image-box"><img src="images/package-1.png" alt="Aarogyam Mini health package"></div>
-            <div class="card-body"><span class="tag">POPULAR</span><h3>Aarogyam Mini</h3><p>Preventive health package</p><a href="tel:8178009011">Book Now →</a></div>
-          </article>
-          <article class="package-card">
-            <div class="image-box"><img src="images/package-2.png" alt="Jaanch female and male hormone screening packages"></div>
-            <div class="card-body"><span class="tag pink">HORMONES</span><h3>Jaanch Hormone Screening</h3><p>Female & male hormone profiles</p><a href="tel:8178009011">Book Now →</a></div>
-          </article>
-          <article class="package-card">
-            <div class="image-box"><img src="images/package-3.png" alt="Pre-pregnancy health checkup"></div>
-            <div class="card-body"><span class="tag rose">WELLNESS</span><h3>Pre-Pregnancy Checkup</h3><p>100+ tests for health insights</p><a href="tel:8178009011">Book Now →</a></div>
-          </article>
-          <article class="package-card">
-            <div class="image-box"><img src="images/package-4.png" alt="Monsoon advanced fever panel"></div>
-            <div class="card-body"><span class="tag blue">FEVER PANEL</span><h3>Monsoon Fever Advanced</h3><p>42 tests for seasonal fever</p><a href="tel:8178009011">Book Now →</a></div>
-          </article>
-          <article class="package-card">
-            <div class="image-box"><img src="images/package-5.png" alt="Monsoon mini fever package"></div>
-            <div class="card-body"><span class="tag blue">FEVER PANEL</span><h3>Monsoon Fever Mini</h3><p>33-test fever screening</p><a href="tel:8178009011">Book Now →</a></div>
-          </article>
-          <article class="package-card">
-            <div class="image-box"><img src="images/package-6.png" alt="Full body checkup"></div>
-            <div class="card-body"><span class="tag">FULL BODY</span><h3>Full Body Checkup</h3><p>122 tests included</p><a href="tel:8178009011">Book Now →</a></div>
-          </article>
-        </div>
+      <div class="tools">
+        <div class="search"><span>⌕</span><input id="search" placeholder="Search packages..." autocomplete="off"></div>
+        <select id="category"><option value="all">All categories</option><option value="health">Health Checkup</option><option value="hormone">Hormone</option><option value="fever">Fever</option><option value="wellness">Wellness</option></select>
+        <select id="sort"><option value="featured">Sort: Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="name">Name: A–Z</option></select>
       </div>
+      <div class="packageGrid" id="packageGrid"></div>
       <p class="note">*Package availability, pricing and test inclusions are subject to the latest offer and laboratory terms. Please confirm at booking.</p>
     </section>
 
-    <section id="services" class="services section">
-      <div class="section-head centered">
-        <span class="eyebrow">SIMPLE & CONVENIENT</span>
-        <h2>Healthcare that fits your <span>day</span></h2>
+    <section class="booking" id="booking">
+      <div class="bookingIntro"><span class="eyebrow">BOOK YOUR TEST</span><h2>Complete your booking</h2><p>Add packages to your cart, enter patient details and send the complete booking request on WhatsApp.</p>
+        <div class="bookingSteps"><span><b>1</b>Select package</span><span><b>2</b>Enter details</span><span><b>3</b>Send on WhatsApp</span></div>
       </div>
-      <div class="service-grid">
-        <div class="service"><div class="icon">⌂</div><h3>Home Sample Collection</h3><p>Book a convenient sample pickup from home.</p></div>
-        <div class="service"><div class="icon">🧪</div><h3>Wide Range of Tests</h3><p>Preventive, wellness, hormone and fever panels.</p></div>
-        <div class="service"><div class="icon">⚡</div><h3>Fast & Convenient</h3><p>Easy booking and streamlined sample collection.</p></div>
-        <div class="service"><div class="icon">🛡</div><h3>Trusted Reports</h3><p>Get your diagnostic reports with care and reliability.</p></div>
-      </div>
-    </section>
-
-    <section id="why-us" class="why section">
-      <div class="why-panel">
-        <div>
-          <span class="eyebrow">WHY TRICITY THYROCARE?</span>
-          <h2>Your health deserves <span>attention.</span></h2>
-          <p>From routine preventive screening to specialized packages, we make diagnostic testing simple and accessible.</p>
-        </div>
-        <div class="checks">
-          <div>✓ <span>Professional sample collection</span></div>
-          <div>✓ <span>Convenient home collection</span></div>
-          <div>✓ <span>Pan India service availability</span></div>
-          <div>✓ <span>Easy phone booking</span></div>
-        </div>
+      <div class="bookingCard">
+        <div id="emptyBooking" class="empty"><div>🛒</div><h3>Your booking cart is empty</h3><p>Select a health package above to continue.</p><a href="#packages" class="primary small">Choose Package</a></div>
+        <form id="bookingForm" class="form hidden">
+          <div class="selectedSummary"><div><b>Selected packages</b><span id="selectedCount">0 items</span></div><div id="selectedList"></div></div>
+          <div class="formGrid">
+            <label>Patient Name*<input required name="name" placeholder="Enter patient name"></label>
+            <label>Mobile Number*<input required name="mobile" inputmode="tel" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile"></label>
+            <label>Email<input name="email" type="email" placeholder="your@email.com"></label>
+            <label>Pincode*<input required name="pincode" inputmode="numeric" maxlength="6" placeholder="6-digit pincode"></label>
+            <label class="wide">Full Address*<textarea required name="address" rows="3" placeholder="House/Flat, street, area, city"></textarea></label>
+            <label>Collection Date*<input required name="date" id="date" type="date"></label>
+            <label>Time Slot*<select required name="slot"><option value="">Select time slot</option><option>7:00 AM – 9:00 AM</option><option>9:00 AM – 11:00 AM</option><option>11:00 AM – 1:00 PM</option><option>1:00 PM – 3:00 PM</option><option>3:00 PM – 5:00 PM</option><option>5:00 PM – 7:00 PM</option></select></label>
+          </div>
+          <label class="check"><input type="checkbox" name="hardcopy" id="hardcopy"> I need a hard-copy report <b>+ ₹75</b></label>
+          <div class="totalBox"><div><span>Package total</span><b id="packageTotal">₹0</b></div><div><span>Hard-copy report</span><b id="hardcopyTotal">₹0</b></div><div class="grand"><span>Grand total</span><b id="grandTotal">₹0</b></div></div>
+          <button class="whatsapp" type="submit">💬 Send Complete Booking on WhatsApp</button>
+          <a class="callLine" href="tel:8178009011">Need help? Call 8178009011</a>
+        </form>
       </div>
     </section>
 
-    <section class="cta">
-      <div>
-        <span class="eyebrow">READY TO GET STARTED?</span>
-        <h2>Book your test today.</h2>
-        <p>Call Tricity Thyrocare Collection Centre for package details and booking.</p>
-      </div>
-      <a class="btn white" href="tel:8178009011">📞 8178009011</a>
+    <section class="why" id="why">
+      <div class="sectionHead centered"><span class="eyebrow">WHY TRICITY THYROCARE</span><h2>Designed around your convenience</h2></div>
+      <div class="whyGrid"><article><i>⌂</i><h3>Home Collection</h3><p>Book a convenient sample collection at your preferred address.</p></article><article><i>✓</i><h3>Simple Process</h3><p>Choose a package, enter details and confirm through WhatsApp.</p></article><article><i>★</i><h3>Trusted Service</h3><p>Professional diagnostic collection support for preventive care.</p></article><article><i>24</i><h3>Easy Support</h3><p>Call or WhatsApp 8178009011 for booking assistance.</p></article></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div><span class="eyebrow">TRICITY THYROCARE COLLECTION CENTRE</span><h2>Ready for your next health check?</h2><p>Call us or start your booking online.</p></div>
+      <div class="contactBtns"><a class="primary" href="tel:8178009011">📞 Call Now</a><a class="whatsapp outlineWhats" href="https://wa.me/918178009011" target="_blank">💬 WhatsApp</a></div>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-main">
-      <div class="brand footer-brand">
-        <div class="brand-mark">T<span>+</span></div>
-        <div><div class="brand-name"><b>Thyro</b><em>care</em></div><small>Tests you can trust</small></div>
-      </div>
-      <div><b>Tricity Thyrocare Collection Centre</b><br><span>Home Collection • Pan India Service</span></div>
-      <div><b>Contact</b><br><a href="tel:8178009011">8178009011</a><br><a href="mailto:tricitythyrocarecollectioncent@gmail.com">tricitythyrocarecollectioncent@gmail.com</a></div>
-    </div>
-    <div class="copyright">© 2026 Tricity Thyrocare Collection Centre. All rights reserved.</div>
-  </footer>
+  <footer><div><b>Tricity <span>Thyrocare</span> Collection Centre</b><p>Diagnostic tests • Health packages • Home sample collection</p></div><div><a href="tel:8178009011">8178009011</a><a href="mailto:tricitythyrocarecollectioncent@gmail.com">tricitythyrocarecollectioncent@gmail.com</a></div></footer>
 
-  <a class="floating-call" href="tel:8178009011">☎</a>
+  <div class="drawerShade" id="shade"></div>
+  <aside class="cartDrawer" id="drawer">
+    <div class="drawerHead"><div><h3>Your Cart</h3><span id="drawerItems">0 items</span></div><button id="cartClose">×</button></div>
+    <div id="cartItems"></div>
+    <div class="drawerFoot"><div><span>Total</span><b id="cartTotal">₹0</b></div><button class="primary" id="goBooking">Proceed to Booking →</button></div>
+  </aside>
+  <div class="toast" id="toast"></div>
+  <a class="floatingCall" href="tel:8178009011" aria-label="Call">☎</a>
   <script src="script.js"></script>
 </body>
 </html>
