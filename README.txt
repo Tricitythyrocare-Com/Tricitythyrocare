@@ -1,23 +1,26 @@
-# Tricity Thyrocare Collection Centre website
+TRICITY THYROCARE COLLECTION CENTRE – FINAL WEBSITE
 
-Upload/replace these files in the existing GitHub repository root:
+Upload these files to the ROOT of your GitHub repository:
 - index.html
 - style.css
 - script.js
-- logo.svg
+- thyrocare-logo.png
+- package-1.png through package-6.png
 
-The existing package-1.png through package-6.png are referenced automatically.
+The website includes:
+- Professional Thyrocare-style homepage
+- Supplied Thyrocare logo
+- Health packages with search/filter/sort
+- Add to cart and quantity controls
+- Patient booking form
+- Date and time-slot selection
+- Hard-copy report +₹75
+- Booking summary and grand total
+- WhatsApp booking
+- Call Now / WhatsApp buttons
+- Mobile responsive layout
+- Cart saved in browser
 
-Important: package prices are stored at the top of `script.js` in the `packages` array so they can be changed easily before publishing.
-
-Features included:
-- Professional mobile-first homepage
-- Thyrocare-style navy/red branding and logo
-- Package search, category filter and sorting
-- Add to cart, quantity +/-, persistent localStorage cart
-- Patient name, mobile, email, address, pincode
-- Collection date and time slot
-- Hard-copy report + ₹75
-- Dynamic totals
-- Complete WhatsApp booking message
-- Call and WhatsApp buttons
+Contact:
+8178009011
+tricitythyrocarecollectioncent@gmail.com

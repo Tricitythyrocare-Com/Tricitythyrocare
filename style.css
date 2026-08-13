@@ -15,3 +15,53 @@ footer{background:#071f43;color:#b7c8de;padding:35px max(24px,calc((100% - 1240p
 .floatingCall{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--red);color:#fff;font-size:25px;box-shadow:0 15px 30px rgba(237,39,51,.3);z-index:25}.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);opacity:0;background:#102d52;color:#fff;padding:12px 18px;border-radius:10px;z-index:50;transition:.25s;font-size:13px}.toast.show{opacity:1;transform:translate(-50%,0)}
 @media(max-width:900px){nav{display:none}.menu{display:block}.header{gap:10px}.cartBtn{margin-left:0}.hero{grid-template-columns:1fr;padding-top:55px}.heroVisual{min-height:430px}.packageGrid{grid-template-columns:repeat(2,1fr)}.booking{grid-template-columns:1fr;gap:25px}.whyGrid{grid-template-columns:repeat(2,1fr)}.quick{grid-template-columns:repeat(2,1fr)}.quick div:nth-child(2){border-right:0}.contact{margin:40px 24px}.tools{grid-template-columns:1fr 1fr}.tools .search{grid-column:1/-1}}
 @media(max-width:600px){.topbar{font-size:11px}.header{height:72px;padding:0 15px}.brand img{width:50px;height:50px}.brand strong{font-size:17px}.hero{padding:45px 18px 35px;gap:25px}.hero h1{font-size:45px;letter-spacing:-2px}.hero p{font-size:15px}.heroActions{display:grid}.heroActions .primary,.heroActions .secondary{width:100%}.trustRow{font-size:12px;gap:12px}.heroVisual{min-height:390px;border-radius:27px}.healthCard{width:82%;padding:28px}.healthCard h2{font-size:39px}.floating{right:10px;bottom:12px}.quick{padding:18px;gap:8px}.quick div{padding:8px;border-right:0}.packages,.why{padding:60px 18px}.sectionHead{display:block}.sectionHead h2,.booking h2,.contact h2{font-size:32px}.sectionHead .outline{margin-top:20px}.tools{grid-template-columns:1fr}.tools .search{grid-column:auto}.packageGrid{grid-template-columns:1fr}.pkgImg{height:235px}.booking{padding:60px 18px}.bookingCard{padding:18px}.formGrid{grid-template-columns:1fr}.wide{grid-column:auto}.whyGrid{grid-template-columns:1fr}.contact{display:block;padding:30px 25px;margin:20px 18px}.contactBtns{display:grid;min-width:0;margin-top:20px}footer{display:grid}footer div:last-child{text-align:left}.floatingCall{width:52px;height:52px;right:16px;bottom:16px}.drawerHead{padding:18px}}
+
+/* ===== Mobile-safe header/logo + booking form fix ===== */
+.brand{min-width:0;flex:0 1 auto}
+.brandLogo{width:58px;height:58px;min-width:58px;display:block;overflow:hidden;border-radius:17px;flex:0 0 58px}
+.brandLogo img{display:block!important;width:58px!important;height:58px!important;max-width:none!important;max-height:none!important;object-fit:contain}
+.brandWords{min-width:0;display:block}
+.brandWords strong{white-space:nowrap}
+.brandWords small{white-space:nowrap}
+#booking .bookingCard{width:100%;min-width:0}
+#booking .form{display:block}
+#booking .form.hidden{display:none!important}
+#booking .formGrid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+#booking .formGrid label{display:grid!important;min-width:0}
+#booking input,#booking select,#booking textarea{display:block!important;width:100%!important;min-width:0!important;border:1px solid var(--line)!important;border-radius:11px!important;padding:13px 12px!important;background:#fff!important;color:var(--ink)!important;font-size:14px!important;line-height:1.35!important}
+#booking textarea{resize:vertical}
+#booking .check{display:flex!important;align-items:center!important;gap:8px!important}
+#booking .check input{width:18px!important;height:18px!important;min-width:18px!important;margin:0!important}
+#booking .whatsapp{display:block!important;width:100%!important}
+#booking .selectedSummary{display:block!important}
+@media(max-width:600px){
+  .header{height:76px;padding:0 12px;gap:8px}
+  .brand{gap:9px;margin-right:auto}
+  .brandLogo{width:52px;height:52px;min-width:52px;flex-basis:52px;border-radius:15px}
+  .brandLogo img{width:52px!important;height:52px!important}
+  .brandWords strong{font-size:16px;line-height:1.1}
+  .brandWords small{font-size:10px;margin-top:2px}
+  .menu{font-size:27px;padding:3px 5px}
+  .cartBtn{height:40px;padding:0 9px;border-radius:10px;font-size:14px}
+  #booking .formGrid{grid-template-columns:1fr!important}
+  #booking .wide{grid-column:auto!important}
+  #booking .bookingCard{padding:18px 15px}
+  #booking .bookingIntro{min-width:0}
+}
+
+/* Final supplied-logo header treatment */
+.brandLogo{
+  width:150px;height:58px;min-width:150px;flex:0 0 150px;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;border-radius:12px;background:#112240;
+}
+.brandLogo img{
+  display:block!important;width:100%!important;height:100%!important;
+  max-width:none!important;max-height:none!important;object-fit:contain;
+}
+.brandWords strong{font-size:19px}
+@media(max-width:600px){
+  .brandLogo{width:128px;height:50px;min-width:128px;flex-basis:128px;border-radius:10px}
+  .brandWords strong{font-size:15px}
+  .brandWords small{font-size:9px}
+}
